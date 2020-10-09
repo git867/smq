@@ -49,27 +49,40 @@
     <!--导航开始-->
     <div id="Logo" >
         <ul id="c_ul">
+            <li>
+                <a href="jsp/cake.jsp">蛋糕</a>
+            </li>
+
+            <li>
+                <a href="jsp/flower.jsp">鲜花</a>
+            </li>
         </ul>
     </div>
+
+
+
     <!--导航结束-->
-    <script type="text/javascript">
-        <%--console.log("<%=path%>");--%>
-        $(function () {
-            //发送Ajax 查询所有分类
-            $.post("${pageContext.request.contextPath}/classServlet",{"method":"findAll"},function (obj) {
-                  // alert(obj);
+<%--    <script type="text/javascript">--%>
+<%--        &lt;%&ndash;console.log("<%=path%>");&ndash;%&gt;--%>
+<%--        $(function () {--%>
+<%--            //发送Ajax 查询所有分类--%>
+<%--            $.post("${pageContext.request.contextPath}/classServlet",{"method":"findAll"},function (obj) {--%>
+<%--                  // alert(obj);--%>
 
-                   var strAry = JSON.parse(obj);
-                   // for (var i = 0; i < strAry.length; i++){
-                   //     alert(strAry[i]);
-                   // }
-               // 遍历json列表，获取每一个li标签
-                $(strAry).each(function () {
-                    //alert(this.classname);
-                   $("#c_ul").append("<li><a href='<%=path%>/jsp/gift.jsp'>"+this.classname+"</a></li>");
-                })
-            },"text");
+<%--                   var strAry = JSON.parse(obj);--%>
+<%--                   // for (var i = 0; i < strAry.length; i++){--%>
+<%--                   //     alert(strAry[i]);--%>
+<%--                   // }--%>
+<%--               // 遍历json列表，获取每一个li标签--%>
+<%--                $(strAry).each(function () {--%>
+<%--                    //alert(this.classname);--%>
+<%--                    --%>
+<%--                   $("#c_ul").append("<li><a href='<%=path%>/ShowServlet?method=show&&id=${}'>"+this.classname+"</a></li>");--%>
+<%--                })--%>
+<%--            },"text");--%>
 
-        });
-    </script>
+<%--        });--%>
+<%--    </script>--%>
+
+
 </div>

@@ -14,6 +14,7 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <%
     String path =request.getContextPath();
+
 %>
 <head>
     <meta charset="UTF-8">
@@ -26,6 +27,9 @@
     <link type="text/css" rel="stylesheet" href="<%=path%>/css/basic.css" >
 </head>
 <body>
+<%
+
+%>
 <%@ include file="head.jsp"%>
 <!--网站顶部开始-->
 

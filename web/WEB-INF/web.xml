@@ -11,7 +11,7 @@
     </resource-ref>
     <!--默认第一个页面是登录页面-->
     <welcome-file-list>
-        <welcome-file>jsp/login.jsp</welcome-file>
+        <welcome-file>jsp/index.jsp</welcome-file>
     </welcome-file-list>
     <!--配置了登录页面的servlet-->
 
@@ -24,6 +24,14 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>com.cn.pre.show_module.servlet.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/ShowServlet</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
