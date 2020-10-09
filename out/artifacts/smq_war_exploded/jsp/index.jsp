@@ -30,8 +30,79 @@
 <%
 
 %>
-<%@ include file="head.jsp"%>
+<%--<%@ include file="head.jsp"%>--%>
 <!--网站顶部开始-->
+
+<div id="TopMain">
+    <!-- 广告开始 -->
+    <div id="topAdv">
+        <a href="#">  <img src="<%=path%>/images/adv.jpg" /> </a>
+        <img src="<%=path%>/images/close.png" class="close"/>
+    </div>
+    <!-- 广告结束
+    Top开始-->
+    <div id="Top">
+        <div class="banner"><a href="#"><img src="<%=path%>/images/logo.png" /></a></div>
+        <div class="search">
+            <form>
+                <input type="text"  class="txt"/>
+                <input type="submit" class="but"  value=""/>
+            </form>
+        </div>
+        <!--search end-->
+        <div class="user">
+            <!--用户登录前状态-->
+            <font><span class="iconfont"></span><a href="LoginServlet?method=toLogin">登录</a></font>
+            <font><span class="iconfont"></span><a href="<%=path%>/RegisterServlet?method=toRegister">注册</a></font>
+            <font><span class="iconfont"></span><a href="#">我的订单</a></font>
+            <font><span class="iconfont"></span><a href="carservlet?method=tocar" target="_blank">购物车</a></font>
+        </div>
+    </div>
+    <!--Top结束.
+</div>
+网站顶部结束-->
+
+
+    <!--导航开始-->
+    <div id="Logo" >
+        <ul id="c_ul">
+            <li>
+                <a href="jsp/cake.jsp">蛋糕</a>
+            </li>
+
+            <li>
+                <a href="jsp/flower.jsp">鲜花</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--导航结束-->
+    <%--    <script type="text/javascript">--%>
+    <%--        &lt;%&ndash;console.log("<%=path%>");&ndash;%&gt;--%>
+    <%--        $(function () {--%>
+    <%--            //发送Ajax 查询所有分类--%>
+    <%--            $.post("${pageContext.request.contextPath}/classServlet",{"method":"findAll"},function (obj) {--%>
+    <%--                  // alert(obj);--%>
+
+    <%--                   var strAry = JSON.parse(obj);--%>
+    <%--                   // for (var i = 0; i < strAry.length; i++){--%>
+    <%--                   //     alert(strAry[i]);--%>
+    <%--                   // }--%>
+    <%--               // 遍历json列表，获取每一个li标签--%>
+    <%--                $(strAry).each(function () {--%>
+    <%--                    //alert(this.classname);--%>
+    <%--                    --%>
+    <%--                   $("#c_ul").append("<li><a href='<%=path%>/ShowServlet?method=show&&id=${}'>"+this.classname+"</a></li>");--%>
+    <%--                })--%>
+    <%--            },"text");--%>
+
+    <%--        });--%>
+    <%--    </script>--%>
+
+
+</div>
 
 <%--    <%@include file="/jsp/head.jsp"%>--%>
 
