@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="smq:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/smq_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="smq/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="smq" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
